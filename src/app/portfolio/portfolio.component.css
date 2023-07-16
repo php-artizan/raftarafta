@@ -1,0 +1,35 @@
+
+
+@media only screen and (min-width: 1370px){
+    .container {
+      max-width: 1376px;
+      min-width: 1376px;
+    }
+  }
+
+  mat-chip-option {
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+  }
+  .mdc-evolution-chip__text-label{
+    font-family: "Inter", sans-serif !important;
+    font-size: 20px;
+  }
+  .mat-mdc-chip-selected,  .mdc-evolution-chip--selected {
+    background-color: #42b883 !important;
+   
+  }
+
+
+  @media only screen and (max-width: 768px){
+    mat-chip-option {
+        padding: 10px;
+      
+      }
+  }
+
+  #portfolio_images img {
+    border-radius: 8px
+  }
