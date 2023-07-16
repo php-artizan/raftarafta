@@ -1,0 +1,228 @@
+
+
+@media only screen and (min-width: 1370px){
+    .container {
+      max-width: 1376px;
+      min-width: 1376px;
+    }
+  }
+@media only screen and (min-width: 992px){
+    #services_row{
+        display: flex;
+        align-items: stretch;
+    }
+}
+#branding_section {
+    border-bottom: 1px solid  #3c3c3c1f;
+    margin-top: 60px;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 ;  white-space: nowrap;border-right: .15em solid #42b883; }
+ 
+    99% {
+        white-space: nowrap;
+        border-right: .15em solid #42b883;
+        /* border-right: none; */
+    }
+    to { width: 100% ;  white-space: normal; border-right: none;  }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent;  }
+    50% { border-color: #42b883; }
+ 
+   
+  }
+#branding_section_heading {
+    font-weight: 800;
+    font-size: 76px;
+    color: var(--custom-primary-text-color);
+    line-height: 1;
+    display: inline-block;
+    background: #0000 linear-gradient(97deg, #b981f9 0%, #bd8bf6 9%, #9f62f7 27%, #f23f10 47%, #f25244 63%, #eeaa05 83%, #f2ab0f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* letter-spacing: 1.5px !important;
+    -webkit-text-stroke: 1px #21354729; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+     /* The typwriter cursor */
+    padding-right: 20px;
+   
+     /* Keeps the content on a single line */
+ 
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end ;
+    /* width: 50%; */
+    
+    
+
+    
+}
+
+#branding_section_subtitle {
+    letter-spacing: 1.2;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+#branding_section_col {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#branding_section_subtitle {
+    /* max-width: 800px; */
+    width: 100%;
+}
+
+#info_section {
+    margin: 100px 0px;
+}
+#info_section_half {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-top: 30px
+}
+#info_title{
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+}
+
+#services_section {
+    margin-top: 64px;
+    border-bottom: 1px solid  #3c3c3c1f;
+}
+
+
+.card {
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #bd8bf6, #f23f10,  #f2ab0f);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    height: 100%;
+}
+.card_structure {
+    padding: 20px 30px;
+}
+
+
+#services_section h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+#services_section p {
+    font-family: "Inter", sans-serif !important;
+    font-size: 16px;
+    text-align: justify;
+    color: #213547;
+}
+#services_section_subtitle {
+    max-width: 800px;
+    margin: 0 auto !important;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center !important;
+
+}
+.card:hover {
+    box-shadow: -10px -10px 15px rgb(255 255 255 / 50%),  10px 10px 15px rgb(70 70 70 / 12%);
+    
+    transform: scale(1.01);
+    transition: all ease-in-out .3s;
+    cursor:pointer
+}
+
+.custom_pill {
+    /* background: #7fd4ae5e; */
+    padding: 10px 20px;
+    max-width: 350px;
+  
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.custom_pill:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    background: rgba(255, 255, 255, 0.774);
+}
+.pill_heading{
+    font-size: 17px;
+    font-weight: 400
+}
+.pill_subtitle {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+#pill_1 {
+    margin-left: 50px;
+    z-index: 2;
+    margin-right: -50px;
+    border-radius: 17px 17px 0px 17px;
+}
+#pill_2{
+
+    border-radius: 17px 17px 0px 17px;
+}
+#pill_3 {
+    margin-left: 50px;
+    z-index: 2;
+    margin-right: -50px;
+    border-radius: 17px 0px 17px 17px;
+}
+#pill_4 {
+    border-radius: 17px 17px 17px 0px;
+    margin-left: -100px;
+}
+#pill_5 {
+    border-radius: 17px 17px 17px 0px;
+    /* margin-left: -100px; */
+}
+#pill_6 {
+    border-radius: 0px 17px 17px 17px;
+    margin-left: -100px;
+}
+@media only screen and (max-width: 1200px){
+    #branding_section_heading {
+        font-size: 60px;
+    }
+    #branding_section_subtitle {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+    #branding_section_col{
+        height: 400px;
+    }
+    #branding_section_heading {
+        font-size: 40px;
+    }
+    #branding_section_subtitle {
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen and (max-width: 415px){
+    #branding_section_heading {
+        font-size: 35px;
+    }
+    #branding_section_subtitle {
+        font-size: 14px;
+    }
+}

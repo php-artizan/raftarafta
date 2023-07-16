@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    font-family: 'Inter', sans-serif;
+    
+}
+html, body { height: 100%;  background: #fff;}
+body { 
+    margin: 0; 
+    font-family: 'Inter', sans-serif;
+
+}
+root {
+    --custom-primary-text-color: #213547;
+}
+
+.container {
+    max-width: 1376px;
+}
+#primary_layout {
+    margin-top: 120px ;
+    
+}
+#primary_heading {
+    font-size :38px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+#primary_heading span{
+    color: #42b883;
+}
+#primary_button{
+    background: #42b883;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 2em ;
+    border-radius: 8px;
+}
+@media only screen and (max-width: 768px){
+    #primary_heading {
+        font-size: 26px
+    }
+    #primary_button {
+        font-size: 14px;
+        padding: 10px 1.5em;
+        border-radius: 6px;
+    }
+}
